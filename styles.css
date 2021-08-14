@@ -1,0 +1,734 @@
+@charset "UTF-8";
+
+
+
+#navbar {
+    background-color: #333;
+    /* Black background color */
+    position: fixed;
+    /* Make it stick/fixed */
+    top: 0px;
+    /* Hide the navbar 50 px outside of the top view */
+    width: 100%;
+    /* Full width */
+    transition: top 0.3s;
+    /* Transition effect when sliding down (and up) */
+}
+
+/* Style the navbar links */
+#navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+}
+
+
+#navbar a:hover {
+    color: #04AA6D;
+}
+
+#navbar a {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+#navbar a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #04AA6D;
+    width: 0%;
+    transition: ease-in-out 250ms;
+}
+
+#navbar a:hover::before {
+    width: 100%;
+}
+@media (max-width:760px) {
+    #navbar {
+        top: -40px;
+    }
+}
+@media (min-width:1000px) {
+    #navbar {
+        display: none;
+    }
+}
+
+@media (max-width:600px) {
+    #navbar a{
+        padding: 5px;
+    }
+}
+
+.About-Section{
+    margin-top: 100px;
+}
+/* Background of main page */
+.Page-Container {
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 1240px;
+    margin: 3% auto;
+    padding: 40px 70px 60px;
+        background-color: #222;
+
+    -webkit-box-shadow: 0 0 40px -10px rgb(0 0 0 / 20%);
+    -moz-box-shadow: 0 0 40px -10px rgba(0, 0, 0, .2);
+    box-shadow: 0 0 40px -10px rgb(0 0 0 / 20%);
+    border-radius: 40px;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden;
+}
+
+
+
+.Page-Scroll {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+
+}
+
+
+body {
+    position: initial;
+    font-family: 'Poppins', Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    background-color: #2B4162;
+    background-position: center center;
+    background-size: calc(100% + 25px);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+.Middle-Section li {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    text-align: left;
+    word-spacing: 20%;
+    text-indent: -3%;
+}
+
+@media (max-width: 1000px) {
+    .Middle-Section li {
+        text-indent: -4%;
+    }
+}
+@media (max-width: 700px) {
+    .Middle-Section li {
+        text-indent: -6%;
+    }
+}
+@media (max-width: 500px) {
+    .Middle-Section li {
+        text-indent: -10.2%;
+    }
+}
+
+
+.logo-symbol {
+    float: left;
+    width: 80px;
+    height: 80px;
+    line-height: 44px;
+    background-color: #2B4162;
+    border-radius: 80px;
+    text-align: center;
+    color: #fff;
+    font-size: 52px;
+    font-weight: 800;
+    padding-left: 20px;
+    padding-top: 15px;
+    text-decoration: none;
+    
+}
+.logo-symbol:hover{
+    color: #04AA6D;
+    transition: ease-in-out 500ms;
+}
+.ProfilePicture {
+    border-radius: 100%;
+    text-align: center;
+    width: 35%;
+    margin: 0 0 0 0;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.Title {
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 0 0;
+    margin-top: -30%;
+    margin-left: 48%;
+    font-style: italic;
+    color: rgb(138, 138, 138);
+}
+
+
+
+.Name {
+    display: flex;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin: 0 0 0 0;
+    margin-left: 48%;
+    font-size: 36px;
+    font-family: 'Alfa Slab One', cursive;
+}
+
+
+.Introduction {
+    text-indent: 0px;
+    margin-left: 46%;
+    font-family: 'Open Sans',sans-serif;
+}
+
+.Introduction,
+.Name,
+.Title,
+.ProfilePicture {
+    display: flex;
+}
+
+/*Experience */
+
+.Portfolio {
+    display: inline;
+}
+
+.Pioneer-Engineering,
+.McMaster-Solar-Car,
+.McMaster-DSC,
+.McMaster-Makers,
+.McMaster-Leading-Edge {
+    margin-left: 50px;
+}
+
+
+.Page-container:not(.full-width-container) {
+    max-width: 94%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 40px;
+}
+body,
+
+p {
+    font-family: "Poppins", Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.75em;
+    color: #d5d5d5;
+    text-indent:-20px;
+
+}
+
+
+    /* NAVBAR  */
+
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+nav{
+    float:right
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    position: relative;
+    margin-left: 40px;
+    margin-left:0 2%; /* % instead of pixels */
+}
+
+nav a{
+    color: #f5f5f5;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+nav a:hover{
+color: #04AA6D;
+
+}
+nav a::before{
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #04AA6D;
+    width: 0%;
+    transition: ease-in-out 250ms;
+}
+
+nav a:hover::before{
+    width: 100%;
+}
+@media (max-width:1110px) {
+    nav li {
+        display: inline-block;
+        position: relative;
+        margin-left: 18px;
+        margin-left: 0 2%;
+        /* % instead of pixels */
+    }
+}
+
+@media (max-width:1000px) {
+    #A-Logo {
+        display: none;
+    }
+
+    #menu-item-1,
+    #menu-item-2,
+    #menu-item-3,
+    #menu-item-4,
+    #menu-item-5 {
+        display: none;
+    }
+    .Page-Container{
+        margin-top: 0px;
+        border-radius: 0px;
+    }
+
+
+
+}
+
+@media (max-width:700px) {
+    #ProfilePicture {
+        display: none;
+    }
+
+    #Title {
+        margin-top: 10%;
+        margin-left: 25%;
+        font-size: 16px;
+
+    }
+
+    #Name {
+        margin-top: 5%;
+        margin-left: 25%;
+        float: center;
+    }
+
+    #Introduction {
+        margin: 0 0 0 0;
+        padding: 0 0 0% 0;
+        border: 0 0 0 0;
+        margin-top: 2.5%;
+        margin-left: -4%;
+    }
+}
+
+.External-Links {
+    display: flex;
+    font-size: 22px;
+}
+
+
+
+/* Put the titles in the center */
+h1{
+    text-align: center;
+}
+
+/* Skills Section */
+.Skills{
+    font-size: 28px;
+    font-family: 'Roboto Condensed',
+    sans-serif;
+    font-family: 'STIX Two Text',
+    serif;
+    list-style: none;
+    font-style: unset;
+
+}
+
+.Skill-1 {
+    display: inline-block;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    margin-left: 15%;
+    margin-right: 10%;
+
+}
+
+.Skill-2 {
+    display: inline-block;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    margin-left: 0%;
+
+}
+
+@media (max-width:700px) {
+    .Skill-1 {
+        display: inline-block;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+        margin-left: 12%;
+        margin-right: 10%;
+    }
+}
+
+/* LIST OF THE CLUBS   */
+    /* MCMASTER SOLAR CAR  */
+h2{
+    margin-block-start: 1em;
+
+}
+.MSC,.McMaster-Solar-Car-Section{
+    display: inline;
+    margin-top: 5%;
+
+}
+
+.MSC{
+    margin-left: 20px;
+    width: 80px;
+    height: 46px;
+}
+    /* MCMASTER MAKERS  */
+.MMK,
+.McMaster-Makers-Section {
+    display: inline-block;
+}
+
+
+.McMaster-Makers-Section{
+    margin-top: 8.5%;
+}
+.MMK {
+    width: 80px;
+    height: 80spx;
+    border: 0 0 0 0;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    margin-left: 10px;
+    margin-bottom: -10px;
+}
+
+    /* MCMASTER LEADING EDGE */
+.MLE,
+.McMaster-Leading-Edge-Section {
+    display: inline-block;
+}
+
+
+.McMaster-Leading-Edge-Section {
+    margin-top: 8.5%;
+}
+
+.MLE {
+    width: 80px;
+    height: 80px;
+    border: 0 0 0 0;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    margin-left: 10px;
+}
+
+    /* MCMASTER GOOGLE DSC */
+.DSC {
+    width: 80px;
+    height: 40px;
+    border: 0 0 0 0;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    margin-left: 20px;
+}
+
+.DSC,
+.McMaster-DSC-Section {
+    display: inline-block;
+}
+
+
+.McMaster-DSC-Section {
+    margin-top: 5%;
+}
+
+.PVARIS{
+    width: 50%;
+    height: 50%;
+}
+
+li{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+
+
+/* Instam,Linked,Github Bar and Copyright Bar at the end of the page */
+.Instagram,
+.Linkedin,
+.Github {
+    display: inline;
+}
+
+.Instagram,
+.Linkedin,
+.Github {
+    margin-top: 30px;
+    display: inline;
+}
+
+.Copyright{
+    margin: 0 0 0 0;
+    margin-left: 0%;
+}
+
+.Linkedin {
+    margin-left: 70%;
+}
+
+@media (max-width:1000px) {
+    .Linkedin {
+        margin-left: 65%;
+    }
+}
+@media (max-width:900px) {
+    .Linkedin {
+        margin-left: 60%;
+    }
+}
+@media (max-width:810px) {
+    .Linkedin {
+        margin-left: 50%;
+    }
+}
+@media (max-width:672px) {
+    .Linkedin {
+        margin-left: 35%;
+    }
+    .Bottom-Bar{
+                margin-top: 10%;
+
+    }
+    .Contact{
+        display: none;
+    }
+}
+@media (max-width:572px) {
+    .Linkedin {
+        margin-left:  17%;
+    }
+}
+@media (max-width:420px) {
+    .Instagram,
+    .Linkedin,
+    .Github{
+        margin: 0% 0% 0% 0%;
+        display: flex;
+        margin-left: 48%;
+    }
+}
+
+/* Make sure that padding behaves as expected */
+* {
+    box-sizing: border-box
+}
+
+/* Container for skill bars */
+.container {
+    width: 100%;
+    /* Full width */
+    background-color: #ddd;
+    /* Grey background */
+}
+
+.skills {
+    text-align: right;
+    /* Right-align text */
+    padding-top: 10px;
+    /* Add top padding */
+    padding-bottom: 10px;
+    /* Add bottom padding */
+    color: white;
+    /* White text color */
+    margin-left: -20px;
+    text-align: center;
+    font-weight: 400;
+}
+
+/* Skill-Bar Percentages  */
+.HTML {
+    width: 75%;
+    background-color: #04AA6D;
+}
+
+.CSS {
+    width: 85%;
+    background-color: #04AA6D;
+}
+
+.PYTHON {
+    width: 95%;
+    background-color: #04AA6D;
+}
+
+.CPLUSPLUS {
+    width: 90%;
+    background-color: #04AA6D;
+}
+
+.CSHARP {
+    width: 65%;
+    background-color: #04AA6D;
+}
+
+text{
+    position: relative;
+    font-size: 28px;
+    font-family: serif;
+    color: #f5f5f5;
+    margin-left: -2%;
+}
+@media (max-width:1200px) {
+    text {
+        margin-left: -2.5%;
+    }
+}
+@media (max-width:1030px) {
+    text {
+        margin-left: -3.65%;
+    }
+}
+
+@media (max-width:700px) {
+    text {
+        margin-left:-6%;
+    }
+}
+
+#Work-Experience{
+    margin-top: 8.5%;
+}
+
+.Top-Section,
+.Bottom-Section,.Middle-Section {
+    margin-top: 25px;
+    font-size: 21px;
+    text-align: center;
+
+    -webkit-animation: fadein 2s;
+    /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s;
+    /* Firefox < 16 */
+    -ms-animation: fadein 2s;
+    /* Internet Explorer */
+    -o-animation: fadein 2s;
+    /* Opera < 12.1 */
+    animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 513px) {
+
+    #Title,
+    #Name {
+        margin-left: 3%;
+    }
+}
+
+@media (max-width:778px) {
+    .MSC,.MMK,.DSC,.MLE{
+        display: flex;
+        margin-left: 40%;
+        margin-bottom: 2%;
+    } 
+}
+
+#contact-name,
+#contact-email,
+#description {
+    float: center;
+}
