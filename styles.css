@@ -118,7 +118,7 @@ ul {
 }
 
 .Middle-Section li,
-#P-Varis {
+.P-Varis {
     margin: 0 0 0 0;
     padding: 0 0 0 0;
     text-align: left;
@@ -127,17 +127,20 @@ ul {
 }
 
 @media (max-width: 1000px) {
-    .Middle-Section li {
+    .Middle-Section li,
+    .P-Varis {
         text-indent: -4%;
     }
 }
 @media (max-width: 700px) {
-    .Middle-Section li {
+    .Middle-Section li,
+    .P-Varis {
         text-indent: -6%;
     }
 }
 @media (max-width: 500px) {
-    .Middle-Section li {
+    .Middle-Section li,
+    .P-Varis {
         text-indent: -10.2%;
     }
 }
@@ -219,7 +222,7 @@ ul {
 .McMaster-Solar-Car,
 .McMaster-DSC,
 .McMaster-Makers,
-.McMaster-Leading-Edge {
+.McMaster-Leading-Edge,.P-Varis {
     margin-left: 50px;
 }
 
